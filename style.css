@@ -17,16 +17,15 @@ body {
 }
 
 .chat-box-container {
-  width: 90%;
-  height: 90vh;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
-  border-radius: 15px;
   overflow: hidden;
 }
 
 .chat-box-header {
   width: 100%;
-  height: 15%;
+  height: 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,12 +44,12 @@ body {
 
 .header-left-part img {
   height: 100%;
-  width: 14vw;
+  width: 13vw;
   object-fit: contain;
 }
 
 .header-middle-part {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .header-right-part {
@@ -59,15 +58,153 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .header-right-part img {
-  height: 50%;
+  height: 48%;
   cursor: pointer;
+}
+
+.chat-box-body {
+  width: 100%;
+  height: 75%;
+  background: url("./assets/images/chatbg/bg-1.jpg");
+}
+
+.chat-box-footer {
+  width: 100%;
+  height: 15%;
+  background-color: #e8dfdfaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-betweens;
+}
+
+.footer-upper {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-upper img {
+  width: 10vw;
+  cursor: pointer;
+}
+
+.footer-upper input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  background-color: #9ceec4;
+  border-radius: 0 20px 20px 15px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.footer-upper input::placeholder {
+  color: #514d4d;
+}
+
+.footer-bottom {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 5px;
+  height: 100%;
+}
+
+.emoji-section-img,
+.font-style-img {
+  width: 8vw;
+  object-fit: contain;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.footer-bottom-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  color: #2d446e;
+}
+
+.send-btn {
+  padding: 14px 35px;
+  background: linear-gradient(to bottom, #7a7070, #000);
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  border-radius: 14px 35px;
+  cursor: pointer;
+  border: 0;
+  height: 100%;
+  display: block;
+}
+
+.send-btn:hover {
+  animation: changeBg 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes changeBg {
+  50% {
+    background: linear-gradient(to left, #b3a3a3, #000);
+  }
 }
 @media (min-width: 320px) {
 }
 @media (min-width: 480px) {
 }
 @media (min-width: 768px) {
+  .chat-box-container {
+    width: 90%;
+    height: 90vh;
+    border-radius: 15px;
+  }
+
+  .chat-box-header {
+    height: 15%;
+  }
+
+  .header-left-part img {
+    width: 11vw;
+  }
+  .header-middle-part {
+    font-size: 2rem;
+  }
+
+  .header-right-part img {
+    height: 50%;
+  }
+
+  .chat-box-body {
+    height: 70%;
+  }
+
+  .chat-box-footer {
+    height: 15%;
+  }
+
+  .footer-upper img {
+    width: 9vw;
+  }
+
+  .emoji-section-img,
+  .font-style-img {
+    width: 6vw;
+  }
+
+  .send-btn {
+    padding: 10px 20px;
+    border-radius: 10px 20px;
+  }
 }
 @media (min-width: 992px) {
   .chat-box-container {
@@ -75,5 +212,13 @@ body {
   }
   .header-left-part img {
     width: 5vw;
+  }
+
+  .footer-upper img {
+    width: 3vw;
+  }
+  .emoji-section-img,
+  .font-style-img {
+    width: 2vw;
   }
 }
