@@ -57,11 +57,40 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .header-right-part img {
   height: 48%;
   cursor: pointer;
+}
+
+.header-right-part .setting-options {
+  position: absolute;
+  right: 60%;
+  top: 70%;
+  width: 200px;
+  height: 120px;
+  background-color: #bea9eb;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 10px;
+  font-size: 1.1rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  gap: 10px;
+}
+.setting-options > div {
+  padding: 2px 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.setting-options > div:hover {
+  background-color: #fff;
 }
 
 .chat-box-body {
@@ -183,7 +212,7 @@ body {
 }
 
 .font-style-collection {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(4, 1fr);
   bottom: 55px;
   left: 0;
