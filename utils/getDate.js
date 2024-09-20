@@ -1,25 +1,8 @@
 const getToday = () => {
-  const weeks = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
-  const months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-
   const date = new Date();
   const year = date.getFullYear();
-  const month = months[date.getMonth()];
   const day = date.getDate();
-  const week = weeks[date.getDay()];
+  const month = date.getMonth() + 1;
   let hours = date.getHours();
   let minutes = date.getMinutes();
 
@@ -31,7 +14,6 @@ const getToday = () => {
   minutes = String(minutes).padStart(2, "0");
 
   return {
-    week,
     day,
     month,
     year,
@@ -42,7 +24,15 @@ const getToday = () => {
 };
 
 const isToday = (date) => {
-  return new Date().toString() === date.toString();
+  return new Date().toDateString() == new Date(date).toDateString();
 };
 
-export { getToday, isToday };
+// Fri, 20 Sep 2024
+const dateUTCformat = (date) => {
+  const utcFormat = date.toUTCstring();
+  const timeStartIndex = utcFormat.search("00:00");
+  const desiredFormat = utcFormat.slice(0, timeStartIndex);
+  return desiredFormat;
+};
+
+export { dateUTCformat, getToday, isToday };
