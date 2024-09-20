@@ -29,9 +29,9 @@ const isToday = (date) => {
 
 // Fri, 20 Sep 2024
 const dateUTCformat = (date) => {
-  const utcFormat = date.toUTCstring();
-  const timeStartIndex = utcFormat.search("00:00");
-  const desiredFormat = utcFormat.slice(0, timeStartIndex);
+  const utcFormat = new Date(date).toUTCString();
+  const timeStartIndex = utcFormat.search(":");
+  const desiredFormat = utcFormat.slice(0, timeStartIndex - 2);
   return desiredFormat;
 };
 

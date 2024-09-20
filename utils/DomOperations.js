@@ -6,4 +6,7 @@ const removeElem = (elm) => elm.remove();
 
 const setText = (elm, text) => (elm.textContent = text);
 
-export { insertAdjacentHtml, removeElem, setText };
+const setListener = (elm, event, handler) =>
+  elm.addEventListener(event, handler);
+
+export { insertAdjacentHtml, removeElem, setListener, setText };
