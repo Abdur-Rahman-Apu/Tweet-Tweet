@@ -9,4 +9,8 @@ const setText = (elm, text) => (elm.textContent = text);
 const setListener = (elm, event, handler) =>
   elm.addEventListener(event, handler);
 
-export { insertAdjacentHtml, removeElem, setListener, setText };
+const setStyle = (elm, newStyle) => {
+  Object.assign(elm.style, newStyle);
+};
+
+export { insertAdjacentHtml, removeElem, setListener, setStyle, setText };
