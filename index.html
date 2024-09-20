@@ -20,13 +20,17 @@
 <body>
 
     <div class="chat-box-container">
+        <!-- chat box header part start  -->
         <div class="chat-box-header">
+            <!-- left part contains logo  -->
             <div class="header-left-part">
                 <img src="./assets/images/chat.png"
                     alt="An image which indicates that this application is a chatting application">
 
             </div>
+            <!-- Application title -->
             <h1 class="header-middle-part">Tweet Tweet</h1>
+            <!-- right part contains setting options  -->
             <div class="header-right-part">
                 <img src="./assets/images/setting.png" alt="A image which indicates that it is for settings">
 
@@ -45,21 +49,28 @@
                 </div>
             </div>
         </div>
+        <!-- chat box header part end  -->
 
+        <!-- chat box body part start  -->
         <div class="chat-box-body">
+
+            <!-- messages container  -->
             <div class="chat-message-container">
+
+                <!-- individual message of specific date  -->
                 <div class="message">
                     <p class="message-date">Fri, 20 Sep 2024</p>
                     <!-- message 1  -->
                     <div class="message-body">
                         <img src="./assets/images/unknown-avatar.jpeg" alt="This image is indicating the user image">
+                        <!-- message part -->
                         <div class="message-text">
                             <p>Hello brother how are you ksdjfladsjflasjdflkjasdfjasdlfkja</p>
 
                             <div class="message-react">🧡<span>Edited</span></div>
                             <span class="message-time">11:02 PM</span>
                         </div>
-
+                        <!-- message reply,edit,delete related actions  -->
                         <div class="message-actions">
                             <i class="far fa-smile"></i>
                             <i class="fas fa-caret-down"></i>
@@ -135,6 +146,7 @@
             </div>
 
 
+            <!-- Search message box  -->
             <div class="search-box">
                 <input type="text" name="search" id="search" placeholder="Search within chat">
                 <div class="search-actions">
@@ -143,7 +155,11 @@
                     <button class="search-close-btn"><i class="fas fa-times"></i></button>
                 </div>
             </div>
+
         </div>
+        <!-- chat box body part end  -->
+
+        <!-- chat box footer part start  -->
         <div class="chat-box-footer">
             <div class="reply-message-at-input-box">
                 <p>This is replay text. I am really sorry about that. I am so sorry. Please forgive me
@@ -207,6 +223,7 @@
                 </div>
             </div>
         </div>
+        <!-- chat box footer part end  -->
 
         <!-- modal section  -->
         <div class="modal">
@@ -230,6 +247,7 @@
             </div>
         </div>
     </div>
+
     <script type="module" src="index.js"></script>
 </body>
 
