@@ -120,10 +120,18 @@
         <div class="modal">
             <div class="overlay"></div>
             <div class="modal-body">
-                <p>Do you want to delete?</p>
-                <div class="modal-action">
-                    <button class="yes-btn">Yes</button>
-                    <button class="no-btn">No</button>
+                <div class="profile-change">
+                    <p>Enter your profile URL</p>
+                    <input type="url" name="profileUrl" id="profileUrl" placeholder="Enter url of your profile...">
+                    <span class="input-err-msg">Please fill this field</span>
+                    <div class="modal-action">
+                        <button class="yes-btn">Save</button>
+                        <button class="no-btn">Cancel</button>
+                    </div>
+                </div>
+                <div class="profile-change-success">
+                    <img src="./assets/images/emoji/tick-mark.png" alt="This image is indicating the success message">
+                    <p>Profile picture saved successfully</p>
                 </div>
             </div>
         </div>
