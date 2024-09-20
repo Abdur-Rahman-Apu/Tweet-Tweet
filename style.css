@@ -73,7 +73,7 @@ body {
   height: 120px;
   background-color: #bea9eb;
   border-radius: 10px;
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   padding: 10px;
@@ -81,6 +81,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   gap: 10px;
+  z-index: 1;
 }
 .setting-options > div {
   padding: 2px 8px;
@@ -93,10 +94,88 @@ body {
   background-color: #fff;
 }
 
+.change-bg {
+  position: relative;
+}
+
+.change-bg-options {
+  display: none;
+  width: 40%;
+  padding: 5px;
+  position: absolute;
+  right: 90%;
+  top: 50%;
+  background-color: #f1bbbb;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.change-bg-options p {
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.change-bg-options p:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.change-bg:hover .change-bg-options {
+  display: block;
+}
+
 .chat-box-body {
   width: 100%;
   height: 75%;
   background: url("./assets/images/chatbg/bg-1.jpg");
+  position: relative;
+}
+
+.search-box {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  height: 50px;
+  background-color: rgb(197, 232, 238);
+  border-bottom-left-radius: 6px;
+  padding: 5px 10px;
+}
+
+.search-box input {
+  padding: 5px;
+  border: none;
+  background-color: #fdffff;
+  border-radius: 5px;
+  height: 70%;
+  font-family: "Roboto Condensed", sans-serif;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-bottom: 1px solid black;
+}
+
+.search-box .search-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-actions p {
+  font-size: 1.1rem;
+}
+
+.search-close-btn {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 1.2rem;
 }
 
 .chat-box-footer {
