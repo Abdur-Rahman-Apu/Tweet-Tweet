@@ -75,7 +75,7 @@ body {
   height: 120px;
   background-color: #bea9eb;
   border-radius: 10px;
-  display: none;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   padding: 10px;
@@ -83,8 +83,19 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   gap: 10px;
+  scale: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
   z-index: 1;
 }
+
+.header-right-part:hover .setting-options {
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
 .setting-options > div {
   padding: 2px 8px;
   border-radius: 20px;
@@ -101,7 +112,6 @@ body {
 }
 
 .change-bg-options {
-  display: none;
   width: 40%;
   padding: 5px;
   position: absolute;
@@ -109,6 +119,10 @@ body {
   top: 50%;
   background-color: #f1bbbb;
   border-radius: 10px;
+  transition: all 1s;
+  scale: 0;
+  opacity: 0;
+  visibility: hidden;
   z-index: -1;
 }
 
@@ -122,7 +136,9 @@ body {
 }
 
 .change-bg:hover .change-bg-options {
-  display: block;
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* chat box body style start  */
