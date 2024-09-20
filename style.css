@@ -340,7 +340,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: none;
+  /* display: none; */
 }
 
 .modal .overlay {
@@ -368,7 +368,6 @@ body {
   align-items: center;
   gap: 20px;
   box-shadow: 3px 3px 3px #080808;
-  display: none;
 }
 
 .modal-body p {
@@ -378,7 +377,7 @@ body {
 }
 
 .modal-body .profile-change input {
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -433,21 +432,26 @@ body {
   box-shadow: none;
 }
 
+.profile-img-preview {
+  width: 25vw;
+  border-radius: 10px;
+}
+
 .profile-change-success {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: #ffffff;
   z-index: 100;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
   width: 80%;
   border-radius: 15px;
-  padding: 10px 15px;
+  padding: 20px 15px;
   text-align: center;
 }
 
@@ -521,6 +525,23 @@ body {
     padding: 10px 20px;
     border-radius: 10px 20px;
   }
+
+  .modal .modal-body .profile-change {
+    width: 60%;
+  }
+
+  .profile-img-preview {
+    width: 15vw;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  .profile-change-success {
+    width: 60%;
+  }
+  .profile-change-success img {
+    width: 14vw;
+  }
 }
 @media (min-width: 992px) {
   .chat-box-container {
@@ -549,5 +570,14 @@ body {
 
   .font-style-collection img {
     width: 1vw;
+  }
+  .modal .modal-body .profile-change {
+    width: 50%;
+  }
+  .profile-change-success {
+    width: 30%;
+  }
+  .profile-change-success img {
+    width: 6vw;
   }
 }
