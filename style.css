@@ -67,7 +67,7 @@ body {
   cursor: pointer;
 }
 
-.header-right-part .setting-options {
+.setting-options {
   position: absolute;
   right: 60%;
   top: 70%;
@@ -83,18 +83,18 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
   gap: 10px;
+  visibility: hidden;
   scale: 0;
   opacity: 0;
-  visibility: hidden;
   transition: 1s;
   z-index: 1;
 }
 
-.header-right-part:hover .setting-options {
+/* .header-right-part:hover .setting-options {
   scale: 1;
   opacity: 1;
   visibility: visible;
-}
+} */
 
 .setting-options > div {
   padding: 2px 8px;
