@@ -30,8 +30,8 @@ const setTextStyle = (tag, msg, startIndex, endIndex) => {
   typeMsg.value = charArr.join("");
 };
 
-const getMessageLength = (message) => {
-  return Array.from(message).length;
+const getMessageLength = () => {
+  return Array.from(typeMsg.value).length;
 };
 
 export {
