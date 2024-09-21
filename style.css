@@ -90,12 +90,6 @@ body {
   z-index: 1;
 }
 
-/* .header-right-part:hover .setting-options {
-  scale: 1;
-  opacity: 1;
-  visibility: visible;
-} */
-
 .setting-options > div {
   padding: 2px 8px;
   border-radius: 20px;
@@ -133,12 +127,6 @@ body {
 
 .change-bg-options p:hover {
   background-color: hsl(0, 0%, 100%);
-}
-
-.change-bg:hover .change-bg-options {
-  scale: 1;
-  opacity: 1;
-  visibility: visible;
 }
 
 /* chat box body style start  */
