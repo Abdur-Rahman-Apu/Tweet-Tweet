@@ -152,7 +152,7 @@ body {
 }
 
 .wave-message {
-  width: 40%;
+  width: 70%;
   background-color: #cbd4d0;
   text-align: center;
   margin: 0 auto;
@@ -739,6 +739,9 @@ body {
 
   .chat-box-body {
     height: 70%;
+  }
+  .wave-message {
+    width: 40%;
   }
 
   .message-body img {
