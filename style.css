@@ -458,7 +458,6 @@ body {
 .emojis,
 .font-style {
   position: relative;
-  transition: 1s;
 }
 
 .emoji-collections,
@@ -476,6 +475,7 @@ body {
   visibility: hidden;
   scale: 0.5;
   opacity: 0;
+  transition: 1s;
 }
 
 .emoji-collections {
