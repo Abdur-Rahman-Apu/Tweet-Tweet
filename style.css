@@ -136,6 +136,22 @@ body {
   height: 75%;
   background: url("./assets/images/chatbg/bg-1.jpg");
   position: relative;
+  overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #21c090;
 }
 
 .chat-message-container {
@@ -236,7 +252,18 @@ body {
   margin-top: 2px;
   width: fit-content;
   font-weight: 500;
-  font-size: 0.92rem;
+  font-size: 0.8rem;
+}
+
+.message-last-part {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.edit-msg {
+  font-size: 0.7rem;
+  font-weight: bold;
 }
 
 .message-body:nth-child(2n + 1) .message-text .message-time {
@@ -318,8 +345,14 @@ body {
   gap: 4px;
 }
 
-.chat-box-container .message-body:last-child .message-actions-options {
+.chat-box-container
+  .message-body:last-child:not(:first-of-type)
+  .message-actions-options {
   bottom: 120%;
+}
+
+.chat-box-container .message-body:only-of-type .message-actions-options {
+  top: 100%;
 }
 
 .chat-box-body .search-box {
@@ -436,6 +469,18 @@ body {
 
 .footer-upper textarea::placeholder {
   color: #514d4d;
+}
+
+.like-img:hover {
+  transition: 1s;
+  /* transform: scale(1.2); */
+  animation: likeBtnAnimation 1.5s linear infinite;
+}
+
+@keyframes likeBtnAnimation {
+  50% {
+    transform: rotate(-25deg) scale(1.1);
+  }
 }
 
 .footer-bottom {
@@ -740,6 +785,7 @@ body {
   .chat-box-body {
     height: 70%;
   }
+
   .wave-message {
     width: 40%;
   }

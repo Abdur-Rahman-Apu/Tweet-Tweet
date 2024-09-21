@@ -1,5 +1,8 @@
 import { typeMsg } from "../lib/Elements/elements.js";
-import { getApplicationData } from "../lib/Storage/storage.js";
+import {
+  getApplicationData,
+  setApplicationData,
+} from "../lib/Storage/storage.js";
 
 const getMessageId = (date) => {
   return date.split("/").join("-");
@@ -7,7 +10,15 @@ const getMessageId = (date) => {
 
 const getSpecificDateMessages = (date) => {
   const { messages } = getApplicationData();
+  console.log(date, "getSpecificDateMessages");
+  console.log(messages, "getSpecificDateMessages");
   return messages[date];
+};
+
+const setSpecificDateMessagesIntoStorage = (date, messages) => {
+  const data = getApplicationData();
+  data["messages"][date] = messages;
+  setApplicationData(data);
 };
 
 const setTextStyle = (tag, msg, startIndex, endIndex) => {
@@ -19,4 +30,9 @@ const setTextStyle = (tag, msg, startIndex, endIndex) => {
   typeMsg.value = charArr.join("");
 };
 
-export { getMessageId, getSpecificDateMessages, setTextStyle };
+export {
+  getMessageId,
+  getSpecificDateMessages,
+  setSpecificDateMessagesIntoStorage,
+  setTextStyle,
+};
