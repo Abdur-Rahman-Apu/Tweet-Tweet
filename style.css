@@ -420,9 +420,10 @@ body {
   position: absolute;
   bottom: 100%;
   width: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 
 .select-message-at-input-box p {
