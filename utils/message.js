@@ -30,8 +30,13 @@ const setTextStyle = (tag, msg, startIndex, endIndex) => {
   typeMsg.value = charArr.join("");
 };
 
+const getMessageLength = (message) => {
+  return Array.from(message).length;
+};
+
 export {
   getMessageId,
+  getMessageLength,
   getSpecificDateMessages,
   setSpecificDateMessagesIntoStorage,
   setTextStyle,
