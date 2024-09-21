@@ -13,4 +13,23 @@ const setStyle = (elm, newStyle) => {
   Object.assign(elm.style, newStyle);
 };
 
-export { insertAdjacentHtml, removeElem, setListener, setStyle, setText };
+const addClass = (elm, name) => elm.classList.add(name);
+
+const removeClass = (elm, name) => elm.classList.remove(name);
+
+const setAttr = (elm, name, value) => elm.setAttribute(name, value);
+const removeAttr = (elm, name) => elm.removeAttribute(name);
+const getAttr = (elm, name) => elm.getAttribute(name);
+
+export {
+  addClass,
+  getAttr,
+  insertAdjacentHtml,
+  removeAttr,
+  removeClass,
+  removeElem,
+  setAttr,
+  setListener,
+  setStyle,
+  setText,
+};

@@ -438,8 +438,7 @@ body {
   outline: none;
   padding: 5px 15px;
   background-color: #9ceec4;
-  /* border-radius: 0 20px 20px 0; */
-  border-radius: 20px;
+  border-radius: 0 20px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
@@ -471,6 +470,7 @@ body {
 .emojis,
 .font-style {
   position: relative;
+  transition: 1s;
 }
 
 .emoji-collections,
@@ -481,10 +481,13 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #989fc4;
-  display: none;
+  display: grid;
   font-size: 1.3rem;
   padding: 5px;
   gap: 3px;
+  visibility: hidden;
+  scale: 0.5;
+  opacity: 0;
 }
 
 .emoji-collections {
@@ -533,6 +536,12 @@ body {
   padding: 15px 20px;
   gap: 20px;
 }
+
+/* .font-style:hover .font-style-collection {
+  visibility: visible;
+  scale: 1;
+  opacity: 1;
+} */
 
 .footer-bottom-left {
   display: flex;
@@ -695,6 +704,18 @@ body {
 .profile-change-success p {
   color: #6a6e6b;
   font-size: 1.1rem;
+}
+
+.hide {
+  visibility: hidden;
+  scale: 0;
+  opacity: 0;
+}
+
+.show {
+  visibility: visible;
+  scale: 1;
+  opacity: 1;
 }
 
 @keyframes changeBg {
