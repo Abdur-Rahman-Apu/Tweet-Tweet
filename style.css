@@ -248,6 +248,10 @@ body {
   margin-left: 2px;
 }
 
+.message-text:focus {
+  background-color: red;
+}
+
 .message-text .message-time {
   display: block;
   margin-left: auto;
@@ -486,6 +490,12 @@ body {
 @keyframes likeBtnAnimation {
   50% {
     transform: rotate(-25deg) scale(1.1);
+  }
+}
+
+@keyframes blinkBg {
+  50% {
+    background-color: #514d4d;
   }
 }
 
