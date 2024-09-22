@@ -640,7 +640,7 @@ body {
 }
 
 .edit-btn {
-  background: linear-gradient(to bottom, #33e47f, #1bff7e);
+  background: linear-gradient(to top, #33e47f, #8eec91);
   box-shadow: -3px 1px 2px #9b9797;
   transition: 1s;
   color: #000;
@@ -677,7 +677,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
-  background-color: #67de7f;
+  background: linear-gradient(to right, #67de7f, #e5ffb0);
   width: 80%;
   padding: 25px 15px;
   border-radius: 15px;
@@ -714,7 +714,7 @@ body {
 .input-err-msg {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
-  color: rgb(33, 21, 21);
+  color: rgb(24, 22, 22);
   display: none;
 }
 
