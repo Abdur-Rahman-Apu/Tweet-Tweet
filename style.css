@@ -239,14 +239,18 @@ body {
   position: absolute;
 }
 
+.message-react {
+  cursor: pointer;
+}
+
 .message-body:nth-child(2n + 1) .message-text .message-react {
   right: 0;
 }
 
-.message-react span {
+/* .message-react span {
   font-size: 0.9rem;
   margin-left: 2px;
-}
+} */
 
 .message-text:focus {
   background-color: red;
