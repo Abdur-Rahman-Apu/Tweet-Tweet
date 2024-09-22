@@ -714,7 +714,7 @@ body {
 .input-err-msg {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
-  color: rgb(131, 7, 7);
+  color: rgb(33, 21, 21);
   display: none;
 }
 
