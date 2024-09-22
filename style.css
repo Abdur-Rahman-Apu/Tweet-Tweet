@@ -209,6 +209,7 @@ body {
   padding: 10px 15px;
   border-radius: 10px;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .reply-message p,
