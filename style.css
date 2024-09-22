@@ -403,6 +403,10 @@ body {
   gap: 15px;
 }
 
+.search-box i {
+  cursor: pointer;
+}
+
 .search-actions p {
   font-size: 1.1rem;
 }
