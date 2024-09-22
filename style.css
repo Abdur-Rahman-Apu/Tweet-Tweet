@@ -791,11 +791,16 @@ body {
   opacity: 1;
 }
 
+.highlight {
+  background-color: #ffee00;
+}
+
 @keyframes changeBg {
   50% {
     background: linear-gradient(to left, #b3a3a3, #000);
   }
 }
+
 @media (min-width: 320px) {
 }
 @media (min-width: 480px) {
