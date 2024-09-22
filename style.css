@@ -87,7 +87,7 @@ body {
   scale: 0;
   opacity: 0;
   transition: 1s;
-  z-index: 1;
+  z-index: 3;
 }
 
 .setting-options > div {
@@ -155,7 +155,7 @@ body {
 }
 
 .chat-message-container {
-  height: 100%;
+  height: auto;
   width: 100%;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -171,11 +171,13 @@ body {
   width: 70%;
   background-color: #cbd4d0;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   padding: 8px 0;
   border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
+  overflow: clip;
+  overflow-clip-margin: border-box;
 }
 
 .message-body {
@@ -367,8 +369,8 @@ body {
 }
 
 .chat-box-body .search-box {
-  position: absolute;
-  right: 0%;
+  position: sticky;
+  left: 0%;
   top: 0%;
   display: none;
   justify-content: space-around;
@@ -378,6 +380,7 @@ body {
   background-color: rgb(197, 232, 238);
   border-bottom-left-radius: 6px;
   padding: 5px 10px;
+  z-index: 2;
 }
 
 .search-box input {

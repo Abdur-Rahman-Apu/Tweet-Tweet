@@ -6,6 +6,8 @@ const removeElem = (elm) => elm.remove();
 
 const setText = (elm, text) => (elm.textContent = text);
 
+const getText = (elm) => elm.textContent;
+
 const setListener = (elm, event, handler) =>
   elm.addEventListener(event, handler);
 
@@ -24,6 +26,7 @@ const getAttr = (elm, name) => elm.getAttribute(name);
 export {
   addClass,
   getAttr,
+  getText,
   insertAdjacentHtml,
   removeAttr,
   removeClass,

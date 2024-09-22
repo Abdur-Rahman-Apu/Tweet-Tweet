@@ -56,14 +56,6 @@
         <!-- chat box body part start  -->
         <div class="chat-box-body">
 
-            <!-- messages container  -->
-            <div class="chat-message-container">
-
-                <!-- individual message of specific date  -->
-
-            </div>
-
-
             <!-- Search message box  -->
             <div class="search-box">
                 <input type="text" name="search" id="search" placeholder="Search within chat">
@@ -73,12 +65,22 @@
                         /
                         <span class="total-match">0</span>
                     </p>
-                    <p><i class="fas fa-chevron-up"></i></p>
-                    <p><i class="fas fa-chevron-down"></i></p>
-                    <button class="search-close-btn" data-action="search"><i class="fas fa-times"
-                            data-action="search"></i></button>
+                    <p><i class="fas fa-chevron-up search-up" data-action="searchBackward" data-jump=null></i></p>
+                    <p><i class="fas fa-chevron-down search-down" data-action="searchForward" data-jump=null></i></p>
+                    <button class="search-close-btn" data-action="searchClose"><i class="fas fa-times"
+                            data-action="searchClose"></i></button>
                 </div>
             </div>
+
+            <!-- messages container  -->
+            <div class="chat-message-container">
+
+                <!-- individual message of specific date  -->
+
+            </div>
+
+
+
 
         </div>
         <!-- chat box body part end  -->
