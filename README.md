@@ -9,18 +9,23 @@ A **single-user chat application** built with **HTML**, **CSS**, and **JavaScrip
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://abdur-rahman-apu.github.io/Tweet-Tweet/)
 
+&nbsp;
+
 ## 🎬 Project Demo
 
+&nbsp; <!-- Adds space -->
 ![first video](./assets/project-video/project-1.gif)
 ![second video](./assets/project-video/project-2.gif)
 ![third video](./assets/project-video/project-3.gif)
 ![fourth video](./assets/project-video/project-4.gif)
 ![fifth video](./assets/project-video/project-5.gif)
 
+&nbsp; <!-- Adds space -->
+
 ## 📑 Table of Contents
 
 - [🚀 Features](#-features)
-- [🛠️ Technologies Used](#-technologies-used)
+- [🛠️ Technologies](#️-technologies-used)
 - [📚 What I Learned](#-what-i-learned)
 - [🏆 Challenges Overcome](#-challenges-overcome)
 - [🧑‍💻 How to Use](#-how-to-use)
@@ -29,8 +34,9 @@ A **single-user chat application** built with **HTML**, **CSS**, and **JavaScrip
 - [📝 License](#-license)
 - [📣 Acknowledgments](#-acknowledgments)
 - [❓ FAQ](#-faq)
-- [🤝 Contributing](#-contributing)
 - [📞 Support](#-support)
+
+&nbsp; <!-- Adds space -->
 
 ## 🚀 Features
 
@@ -78,12 +84,16 @@ A **single-user chat application** built with **HTML**, **CSS**, and **JavaScrip
 - Display a friendly "Start your conversation 👋" when there are no messages today 🌅
 - Clicking the wave sends the 👋 emoji automatically 🎉
 
+&nbsp; <!-- Adds space -->
+
 ## 🛠️ Technologies Used
 
 - **HTML5** 📄 - Structure
 - **CSS3** 🎨 - Styling and Animations
 - **JavaScript** 🖥️ - Functionality and DOM Manipulation
 - **localStorage** 💾 - Data Persistence
+
+&nbsp; <!-- Adds space -->
 
 ## 📚 What I Learned
 
@@ -95,12 +105,16 @@ A **single-user chat application** built with **HTML**, **CSS**, and **JavaScrip
 - Managing and updating **complex data structures** in **localStorage** 📂
 - Mastering **CSS specificity** and the importance of the **z-index** property with positioning 📏
 
+&nbsp; <!-- Adds space -->
+
 ## 🏆 Challenges Overcome
 
 - **Smooth Navigation**: Implemented `scrollIntoView` and background animations for message highlights 🚀
 - **Search Box Positioning**: Adjusted the message container height to fix the search bar 📐
 - **Character Counting for Emojis**: Converted strings to arrays to accurately count characters with emojis 🔢➡️📋
 - **Text Formatting**: Utilized the `select` event and its properties to enable text styling options like bold and italic ✒️
+
+&nbsp; <!-- Adds space -->
 
 ## 🧑‍💻 How to Use
 
@@ -112,6 +126,8 @@ A **single-user chat application** built with **HTML**, **CSS**, and **JavaScrip
 2. **Open the Application**:
    - Open `index.html` in your preferred web browser to start using the chat app 🌐
 
+&nbsp; <!-- Adds space -->
+
 ## 🔮 Future Improvements
 
 - [ ] **Multi-User Functionality** 👥
@@ -119,6 +135,8 @@ A **single-user chat application** built with **HTML**, **CSS**, and **JavaScrip
 - [ ] **Database Integration** for long-term message storage 🗄️
 - [ ] **Mobile Responsiveness** 📱
 - [ ] **Dark Mode** 🌙
+
+&nbsp;
 
 ## 📸 Screenshots
 
@@ -131,9 +149,13 @@ A **single-user chat application** built with **HTML**, **CSS**, and **JavaScrip
 ![setting](./assets/screenshots/settings.jpg)
 ![profile](./assets/screenshots/changeProfile.jpg)
 
+&nbsp;
+
 ## 📝 License
 
 This project is licensed under the [MIT License](LICENSE) © 2024.
+
+&nbsp;
 
 ## 📣 Acknowledgments
 
@@ -141,6 +163,8 @@ This project is licensed under the [MIT License](LICENSE) © 2024.
 - [Unsplash](https://unsplash.com/) for images
 - [JavaScript Info](https://javascript.info/) for learning resources
 - Special thanks to [JavaScript Ninja](https://webdeveloperbd.net/js-bootcamp/) for their guidance
+
+&nbsp;
 
 ## ❓ FAQ
 
@@ -153,10 +177,12 @@ A: Messages are stored locally in your browser's `localStorage`.
 **Q: How can I reset my chat history?**  
 A: Clear your browser's localStorage or use the reset option in the app settings.
 
+&nbsp;
+
 ## 📞 Support
 
 If you encounter any issues or have questions, feel free to [open an issue](https://github.com/yourusername/chat-app/issues) on GitHub or contact me at [abdurrahmany418@gmail.com](mailto:abdurrahmany418@gmail.com)
 
----
+## &nbsp;
 
 &copy; 2024 Abdur Rahman Apu. All rights reserved.
