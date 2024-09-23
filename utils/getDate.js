@@ -1,3 +1,4 @@
+// To get current date and time
 const getToday = () => {
   const date = new Date();
   const year = date.getFullYear();
@@ -23,11 +24,12 @@ const getToday = () => {
   };
 };
 
+// A validation function to find the specific date is today or not
 const isToday = (date) => {
   return new Date().toDateString() == new Date(date).toDateString();
 };
 
-// Fri, 20 Sep 2024
+// Get date in this format - Fri, 20 Sep 2024
 const dateUTCformat = (date) => {
   const utcFormat = new Date(date).toUTCString();
   const timeStartIndex = utcFormat.search(":");
