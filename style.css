@@ -807,7 +807,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  background: linear-gradient(to right, rgb(236, 237, 233), rgb(200, 242, 223));
   z-index: 100;
   display: none;
   flex-direction: column;
@@ -822,6 +822,13 @@ body {
 
 .profile-change-success img {
   width: 18vw;
+  animation: animateTickImg 1.3s ease-in-out infinite;
+}
+
+@keyframes animateTickImg {
+  50% {
+    transform: rotate(15deg);
+  }
 }
 
 .profile-change-success p {
