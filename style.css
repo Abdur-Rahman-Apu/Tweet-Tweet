@@ -65,6 +65,11 @@ body {
 .header-right-part img {
   height: 48%;
   cursor: pointer;
+  transition: all 2s;
+}
+
+.header-right-part img:hover {
+  transform: rotate(360deg);
 }
 
 .setting-options {
@@ -368,6 +373,16 @@ body {
   top: 100%;
 }
 
+.search:hover .search-icon {
+  animation: searchIconAnim 2s linear infinite;
+}
+
+@keyframes searchIconAnim {
+  50% {
+    transform: rotate(25deg) scale(1.1);
+  }
+}
+
 .chat-box-body .search-box {
   position: sticky;
   left: 0%;
@@ -448,7 +463,8 @@ body {
 }
 
 .remove-select-message-at-input-box {
-  background-color: transparent;
+  background-color: rgb(190, 190, 190);
+  padding: 5px 10px;
   border: 0;
   outline: 0;
   cursor: pointer;
@@ -457,7 +473,6 @@ body {
 }
 .remove-select-message-at-input-box:hover {
   scale: 1.1;
-  color: red;
 }
 
 .footer-upper {
@@ -480,12 +495,13 @@ body {
   outline: none;
   padding: 5px 15px;
   background-color: #9ceec4;
-  border-radius: 0 20px;
+  border-radius: 20px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   resize: none;
   scrollbar-width: none;
+  box-shadow: 2px 2px 3px rgb(49, 165, 71) inset;
 }
 
 .footer-upper textarea::placeholder {
@@ -627,6 +643,7 @@ body {
   cursor: pointer;
   border: 0;
   height: 100%;
+  overflow: hidden;
 }
 
 .send-btn {
@@ -639,6 +656,26 @@ body {
   animation: changeBg 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.send-btn:hover .send-btn-plane-icon {
+  animation: planeAnimation 1.5s ease-in-out;
+}
+
+@keyframes planeAnimation {
+  15% {
+    transform: translate(12px, -40px);
+  }
+  50% {
+    transform: translate(50px, 12px);
+  }
+
+  75% {
+    transform: translate(-15px, 30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 .edit-btn {
   background: linear-gradient(to top, #33e47f, #8eec91);
   box-shadow: -3px 1px 2px #9b9797;
@@ -649,6 +686,16 @@ body {
 
 .edit-btn:hover {
   box-shadow: none;
+}
+
+.edit-btn:hover .edit-btn-icon {
+  animation: editBtnAnim 1s ease-in-out infinite;
+}
+
+@keyframes editBtnAnim {
+  50% {
+    transform: rotate(15deg);
+  }
 }
 
 /* modal css start  */
