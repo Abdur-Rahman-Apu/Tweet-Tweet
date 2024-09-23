@@ -346,6 +346,10 @@ body {
   right: 0;
 }
 
+.message-body:first-child .message-actions-options {
+  right: 100%;
+}
+
 .message-actions-options div {
   margin: 8px 0;
   padding: 8px 7px;
