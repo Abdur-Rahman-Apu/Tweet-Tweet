@@ -9,11 +9,9 @@ A **single-user chat application** built with **HTML**, **CSS**, and **JavaScrip
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://abdur-rahman-apu.github.io/Tweet-Tweet/)
 
-&nbsp;
 
 ## 🎬 Project Demo
 
-&nbsp; <!-- Adds space -->
 ![first video](./assets/project-video/project-1.gif)
 ![second video](./assets/project-video/project-2.gif)
 ![third video](./assets/project-video/project-3.gif)
